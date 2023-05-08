@@ -38,6 +38,7 @@
       class="antialiased"
       @notify.window="open = $event.detail.open" 
       :class="{'first-page': !open, 'second-page': open}"
+      x-cloak
     >
 
         {{ $slot }}
